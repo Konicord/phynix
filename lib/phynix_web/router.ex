@@ -28,6 +28,13 @@ defmodule PhynixWeb.Router do
     get "/contact", PageController, :contact
   end
 
+  # Scope for Dashboard
+  scope "/", PhynixWeb do
+    pipe_through :browser
+
+    get "/dashboard", PageController, :dashboard
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", PhynixWeb do
   #   pipe_through :api
