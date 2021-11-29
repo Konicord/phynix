@@ -8,4 +8,8 @@ defmodule PhynixWeb.PageController do
   def contact(conn, _params) do
     render(conn, "contact.html")
   end
+
+  def dashboard(conn, _params) do
+    render(conn, "dashboard.html")
+  end
 end
