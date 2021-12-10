@@ -1,6 +1,20 @@
 <section class="contact">
   <h1><%= gettext "Welcome to %{name}!", name: "Contact" %></h1>
-  <p>Explore the World, with Phynix.</p>
+  <p>If you have any questions, feel free to send us a message through our panel below!</p>
 
+<!-- To use Webhooks/Email, create an account at formspree.io -->
 </section>
-<button class="testbutton" put_flash>test</button>
+<form
+  action="https://formspree.io/f/mbjqnopz"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
