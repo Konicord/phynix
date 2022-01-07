@@ -17,21 +17,18 @@ defmodule PhynixWeb.Router do
   # Main Page
   scope "/", PhynixWeb do
     pipe_through :browser
-
     get "/", PageController, :index
   end
 
   # Scope for contact Page
   scope "/", PhynixWeb do
     pipe_through :browser
-
     get "/contact", PageController, :contact
   end
 
   # Scope for Dashboard
   scope "/", PhynixWeb do
     pipe_through :browser
-
     get "/dashboard", PageController, :dashboard
   end
 
