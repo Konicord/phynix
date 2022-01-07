@@ -1,6 +1,15 @@
-<section class="contact">
-  <h1><%= gettext "Welcome to the %{name}!", name: "Dashboard" %></h1>
-  <p>Here you can access all of your Data.</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <%= csrf_meta_tag() %>
+    <%= live_title_tag assigns[:page_title] || "Phynix", suffix: " · Dashboard" %>
+    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/css/dashboard.css")} />
 
-</section>
-<button class="testbutton" put_flash>test</button>
+    <p class="test">test</p>
+  </head>
+  <body>
+  </body>
+</html>
