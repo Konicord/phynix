@@ -4,11 +4,22 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <%= csrf_meta_tag() %>
     <%= live_title_tag assigns[:page_title] || "Phynix", suffix: " · Dashboard" %>
-    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/css/dashboard.css")} />
+    <link phx-track-static rel="dashboard" href={Routes.static_path(@conn, "/css/dashboard.css")} />
 
-    <p class="test">test</p>
+    <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <strong>Warning!</strong> This page is still under construction and may not work.
+    </div>
+
+    <p class="title">Start working here:</p>
+
+
+
+   <!-- <div class="loader"></div>
+   <i class="fas fa-user"></i> -->
   </head>
   <body>
   </body>
