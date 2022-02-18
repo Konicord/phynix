@@ -1,4 +1,4 @@
-/* This file is for your main application CSS */
+/* This file is for your main application CSS, you have to import them here to be able to use them. */
 @import "./phoenix.css";
 @import "./dashboard.css";
 
